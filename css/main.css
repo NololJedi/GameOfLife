@@ -1,0 +1,38 @@
+body {
+background-color: #96a3cb;
+}
+
+.field {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.field canvas {
+    border: 3px solid black;
+}
+
+.gameSetting {
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.gameSetting button {
+    margin-top: 20px;
+}
+
+.gameSetting div {
+    margin-left: 5px;
+}
+
+.message {
+    height: 20px;
+    margin-top: 5px;
+    color: #ff67a4;
+}
+
+.message ul {
+    list-style: none;
+}

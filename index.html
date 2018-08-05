@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>Game of life</title>
+</head>
+<body>
+<div class="gameSetting">
+    <form class="form-inline">
+        <div>
+            <label for="size">Size: </label>
+            <input id="size" type="number" value="500">
+        </div>
+        <div>
+            <label for="iterations">Number of iterations:</label>
+            <input id="iterations" type="number" value="1000">
+        </div>
+        <div>
+            <label for="count">Count of life objects:</label>
+            <input id="count" type="number" value="10">
+        </div>
+        <div>
+            <label title="Density of predators to victims 1 x value" for="density">Density: </label>
+            <input id="density" type="number" value="2">
+        </div>
+        <div>
+            <label for="predatorLifePeriod" title="Iterations count of predator's life.">Predators life period:</label>
+            <input id="predatorLifePeriod" type="number" value="10">
+        </div>
+        <div>
+            <label for="reproductivePeriod" title="Iterations count of reproductive period.">Reproductive period:</label>
+            <input id="reproductivePeriod" type="number" value="3">
+        </div>
+        <button class="btn btn-danger" id="start">Start</button>
+    </form>
+</div>
+<div class="message">
+    <ul id="message"></ul>
+</div>
+<div class="field" id="field"><canvas id="canvas" width="500" height="500"></canvas></div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
