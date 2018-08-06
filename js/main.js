@@ -87,7 +87,7 @@ function GameField(interval) {
     };
     this.message = function (message) {
         this.context.fillStyle = "white";
-        this.context.font = size / 10 + "px Arial";
+        this.context.font = size / 12 + "px Arial";
         if (ITERATIONS_FINISHED_MESSAGE === message) {
             this.context.fillText(message, size / 5, size / 2);
         } else {
@@ -115,7 +115,9 @@ function LifeObject(color, cell) {
         if (this.reproductiveIndex === 0) {
             let newCell = createNewCell(this.cell, this.color);
             if (PREDATOR_COLOR === color) {
-                predators.push(new Predator(newCell));
+                let predator = new Predator(newCell);
+                predator.predatorLifePeriod = Math.round(predatorLifePeriod / 2);
+                predators.push(predator);
             }
             if (VICTIM_COLOR === color) {
                 victims.push(new LifeObject(VICTIM_COLOR, newCell));
@@ -145,7 +147,6 @@ function Predator(cell) {
                 victims.splice(victimsIndex, 1);
                 //Reload predator's life period
                 this.predatorLifePeriod = predatorLifePeriod;
-                break;
             }
         }
     };

@@ -1,5 +1,5 @@
 body {
-background-color: #96a3cb;
+background-color: #6acbb3;
 }
 
 .field {
@@ -30,7 +30,7 @@ background-color: #96a3cb;
 .message {
     height: 20px;
     margin-top: 5px;
-    color: #ff67a4;
+    color: #ff1919;
 }
 
 .message ul {
