@@ -1,11 +1,11 @@
 body {
-background-color: #6acbb3;
+    background-color: rgba(234, 255, 124, 0.62);
 }
 
 .field {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .field canvas {
@@ -13,7 +13,7 @@ background-color: #6acbb3;
 }
 
 .gameSetting {
-    color: white;
+    color: black;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -30,9 +30,47 @@ background-color: #6acbb3;
 .message {
     height: 20px;
     margin-top: 5px;
-    color: #ff1919;
+    color: #ff0600;
 }
 
 .message ul {
     list-style: none;
+}
+
+.message li {
+    margin-right: 10px;
+    display: inline;
+}
+
+.victim {
+    margin-left: 20px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+}
+
+.predator {
+    margin-left: 20px;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+}
+
+.story {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.information {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.rangeDensity {
+    width: 300px;
+}
+
+.result {
+    font-size: 30px;
+    height: 30px;
 }
